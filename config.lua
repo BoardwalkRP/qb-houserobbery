@@ -1,12 +1,14 @@
 Config = {}
 
-Config.PoliceOnDutyRequired = 2           -- amount of police required to be on duty to rob a house
+Config.Debug = false                      -- Enable PolyZone debug (useful for setting up houses)
 
-Config.LimitTime = true                   -- Use in-game clock hours to set the time the houses can be robbed
+Config.PoliceOnDutyRequired = 4           -- amount of police required to be on duty to rob a house
+
+Config.UseClockHours = false              -- Use in-game clock hours to set the time the houses can be robbed
 Config.MinimumTime = 6                    -- only needed if LimitTime is true
 Config.MaximumTime = 22                   -- only needed if LimitTime is true
 
-Config.TimeToCloseDoors = 25              -- in minutes (only start counting after one person enters the house)
+Config.TimeToCloseDoors = 45              -- in minutes (only start counting after one person enters the house)
 
 Config.RequireScrewdriver = true          -- if true, you need a screwdriver to rob a house when not using advanced lockpick
 
@@ -25,34 +27,66 @@ Config.Rewards = {
             { item = 'goldchain',       min = 1, max = 1 },
             { item = 'weed_skunk',      min = 1, max = 3 },
             { item = 'thermite',        min = 1, max = 1 },
-            { item = 'cryptostick',     min = 1, max = 1 },
             { item = 'weapon_golfclub', min = 1, max = 1 },
+            { item = 'diazepam',        min = 1, max = 3 },
+            { item = 'oxycodone',       min = 1, max = 2 },
+            { item = 'weed_purplehaze', min = 1, max = 3 },
+            { item = 'weed_whitewidow', min = 1, max = 3 },
         },
         ['kitchen'] = {
-            { item = 'tosti',     min = 1, max = 3 },
-            { item = 'sandwich',  min = 1, max = 2 },
-            { item = 'goldchain', min = 1, max = 1 }
+            { item = 'tosti',         min = 1, max = 3 },
+            { item = 'sandwich',      min = 1, max = 2 },
+            { item = 'goldchain',     min = 1, max = 1 },
+            { item = 'cowmeat',       min = 1, max = 2 },
+            { item = 'potato',        min = 1, max = 4 },
+            { item = 'egg',           min = 1, max = 12 },
+            { item = 'pickle',        min = 1, max = 6 },
+            { item = 'cheese',        min = 1, max = 1 },
+            { item = 'onion',         min = 1, max = 2 },
+            { item = 'tomato',        min = 1, max = 3 },
+            { item = 'shrimp',        min = 1, max = 5 },
+            { item = 'milk',          min = 1, max = 1 },
+            { item = 'donut',         min = 1, max = 1 },
+            { item = 'donut2',        min = 1, max = 1 },
+            { item = 'donut3',        min = 1, max = 1 },
+            { item = 'donut4',        min = 1, max = 1 },
+            { item = 'donut5',        min = 1, max = 1 },
+            { item = 'donut6',        min = 1, max = 1 },
+            { item = 'donut7',        min = 1, max = 1 },
+            { item = 'donut8',        min = 1, max = 1 },
+            { item = 'weapon_knife',  min = 1, max = 1 },
+            { item = 'weapon_wrench', min = 1, max = 1 },
         },
         ['chest'] = {
-            { item = 'plastic',             min = 1, max = 4 },
-            { item = 'rolex',               min = 1, max = 2 },
-            { item = 'diamond_ring',        min = 1, max = 1 },
-            { item = 'goldchain',           min = 1, max = 1 },
-            { item = 'weed_skunk',          min = 1, max = 5 },
-            { item = 'thermite',            min = 1, max = 1 },
-            { item = 'cryptostick',         min = 1, max = 1 },
-            { item = 'weapon_combatpistol', min = 1, max = 1 }
+            { item = 'plastic',         min = 1, max = 4 },
+            { item = 'rolex',           min = 1, max = 2 },
+            { item = 'diamond_ring',    min = 1, max = 1 },
+            { item = 'goldchain',       min = 1, max = 1 },
+            { item = 'weed_skunk',      min = 1, max = 5 },
+            { item = 'thermite',        min = 1, max = 1 },
+            { item = 'weapon_pistol',   min = 1, max = 1 },
+            { item = 'diazepam',        min = 1, max = 3 },
+            { item = 'oxycodone',       min = 1, max = 2 },
+            { item = 'weed_purplehaze', min = 1, max = 3 },
+            { item = 'weed_whitewidow', min = 1, max = 3 },
+            { item = 'weapon_bat',      min = 1, max = 1 },
         },
         ['livingroom'] = {
-            { item = 'plastic',      min = 1, max = 4 },
-            { item = 'rolex',        min = 1, max = 1 },
-            { item = 'diamond_ring', min = 1, max = 1 },
-            { item = 'goldchain',    min = 1, max = 1 },
-            { item = 'thermite',     min = 1, max = 1 },
-            { item = 'cryptostick',  min = 1, max = 1 },
-            { item = 'tablet',       min = 1, max = 1 },
-            { item = 'pistol_ammo',  min = 1, max = 3 }
-        }
+            { item = 'plastic',         min = 1, max = 4 },
+            { item = 'rolex',           min = 1, max = 1 },
+            { item = 'diamond_ring',    min = 1, max = 1 },
+            { item = 'goldchain',       min = 1, max = 1 },
+            { item = 'thermite',        min = 1, max = 1 },
+            { item = 'pistol_ammo',     min = 1, max = 3 },
+            { item = 'joint',           min = 1, max = 4 },
+            { item = 'rolling_paper',   min = 2, max = 5 },
+            { item = 'twerks_candy',    min = 1, max = 3 },
+            { item = 'snikkel_candy',   min = 1, max = 3 },
+            { item = 'lighter',         min = 1, max = 1 },
+            { item = 'weed_purplehaze', min = 1, max = 3 },
+            { item = 'weed_whitewidow', min = 1, max = 3 },
+            { item = 'weed_skunk',      min = 1, max = 5 },
+        },
     }
 }
 
