@@ -11,7 +11,11 @@ shared_scripts {
     'locales/*.lua'
 }
 
-client_script 'client/main.lua'
+client_scripts {
+    '@PolyZone/client.lua',
+    '@PolyZone/BoxZone.lua',
+    'client/main.lua',
+}
 server_script 'server/main.lua'
 
 dependencies {
