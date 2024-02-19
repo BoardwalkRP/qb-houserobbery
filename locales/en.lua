@@ -13,8 +13,8 @@ local Translations = {
     },
     info = {
         ["palert"] = "Attempted House Robbery",
-        ["henter"] = "~g~E~w~ - To Enter",
-        ["hleave"] = "~g~E~w~ - To leave house",
+        ["henter"] = "To Enter",
+        ["hleave"] = "To leave house",
         ["aint"] = "~g~E~w~ - ",
         ["hsearch"] = "Searching..",
         ["hsempty"] = "Empty..",
